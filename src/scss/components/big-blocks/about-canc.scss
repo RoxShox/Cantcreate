@@ -1,0 +1,160 @@
+.about-canc {
+	position: relative;
+	// height: 100vh;
+	overflow: hidden;
+	.container {
+		position: relative;
+	}
+
+	&__inner {
+		position: relative;
+		display: flex;
+		align-items: flex-end;
+		height: 100vh;
+		padding-bottom: 90px;
+		@include media-max(1024) {
+			padding-bottom: 0;
+			align-items: center;
+		}
+	}
+
+	&-title {
+		font-weight: 400;
+		font-size: 128px;
+		line-height: 92%;
+		letter-spacing: -0.08em;
+		text-transform: uppercase;
+		max-width: 600px;
+		color: #FFFFFF;
+		position: relative;
+		z-index: 2;
+		@include media-max(1024) {
+			font-size: 100px;
+		}
+		@include media-max(768) {
+			font-size: 80px;
+			max-width: 400px;
+		}
+		@include media-max(550) {
+			font-size: 64px;
+		}
+
+		span {
+			-webkit-text-stroke: 1px var(--orange);
+			-webkit-text-fill-color: #000;
+		}
+	}
+
+	&__photo {
+		position: absolute;
+		// width: 100%;
+		// height: 100%;
+		z-index: 3;
+
+		&:nth-child(1) {
+			left: 438px;
+			bottom: 90px;
+			@include media-max(1024) {
+				bottom: 130px;
+				left: 225px;
+			}
+			img{
+				@include media-max(1024) {
+					width: 122px;
+					height: 122px;
+					background-position: center;
+					background-size: cover;
+					bottom: 130px;
+					left: 225px;
+				}
+			}
+			&::before {
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 100%;
+				border: 1px solid #F7941D;
+				border-radius: 100%;
+				right: 8px;
+				top: 10px;
+				z-index: -3;
+			}
+		}
+
+		&:nth-child(2) {
+			left: 662px;
+			bottom: 290px;
+			@include media-max(1024) {
+				left: 550px;
+			}
+			@include media-max(768) {
+				bottom: 430px;
+				left: auto;
+				right: -65px;
+			}
+		}
+
+		&:nth-child(3) {
+			right: 630px;
+			top: 230px;
+			@include media-max(1024) {
+				top: 187px;
+				right: auto;
+				left: 67px;
+			}
+			&::before {
+				position: absolute;
+				content: '';
+				width: 63px;
+				height: 63px;
+				border: 1px solid #FFFFFF;
+				border-radius: 100%;
+				right: 8px;
+				top: 7px;
+				z-index: -3;
+			}
+		}
+
+		&:nth-child(4) {
+			right: 190px;
+			top: 86px;
+			&::before {
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 100%;
+				border: 1px solid #F7941D;
+				border-radius: 100%;
+				right: 12px;
+				top: 14px;
+				z-index: -3;
+				@include media-max(768) {
+					right: 8px;
+					top: 9px;
+				}
+			}
+			img{
+				@include media-max(768) {
+					width: 125px;
+					height: 124px;
+				}
+			}
+			@include media-max(550) {
+				right: auto;
+				left: 183px;
+			}
+		
+			
+		}
+		&:nth-child(5) {
+			right: 190px;
+			bottom: 177px;
+			@include media-max(1024) {
+				right: auto;
+				left: 20px;
+				bottom: 100px;
+			}
+		}
+	}
+
+}

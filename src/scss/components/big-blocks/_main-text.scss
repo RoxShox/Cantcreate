@@ -1,0 +1,34 @@
+.main-text {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+
+
+  .container {
+    @include flex-all-center;
+    height: 100%;
+  }
+
+  &__inner {
+    @include flex-all-center;
+    flex-direction: column;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.08em;
+    max-width: 690px;
+
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+}

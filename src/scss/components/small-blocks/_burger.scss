@@ -1,0 +1,17 @@
+.burger-menu {
+  position: relative;
+}
+
+.burger-menu.burger-close div:first-child {
+  transform: rotate(-45deg);
+}
+
+.burger-menu.burger-close div:nth-child(2){
+  transform: rotate(45deg);
+  width: 36px;
+  position: absolute;
+  top: 1px;
+}
+.burger-menu.burger-close:before {
+  display: none;
+}

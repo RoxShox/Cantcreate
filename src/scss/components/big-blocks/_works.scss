@@ -1,0 +1,61 @@
+.works{
+	position: relative;
+	padding-top: 141px;
+	overflow: hidden;
+	&__slider-item{
+		position: relative;
+	}
+	&__slider-link{
+		position: absolute;
+		bottom: 31px;
+		display: none;
+		align-items: flex-end;
+		left: -12px;
+		transition: all .3s;
+		@include media-max(500) {
+			left: 32px;
+		}
+	}
+	.slick-current .works__slider-link{
+		display: flex;
+	}
+	&__slider-link-title{
+		font-weight: 400;
+		font-size: 50px;
+		line-height: 71%;
+		letter-spacing: -0.08em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		max-width: 189px;
+		margin-right: 16px;
+		span{
+			margin-bottom: 10px;
+		}
+	}
+	&__title{
+		font-weight: 600;
+		font-size: 180px;
+		line-height: 100%;
+		letter-spacing: -0.08em;
+		text-transform: uppercase;
+		color: #121212;
+		position: absolute;
+		top: 0;
+		right: -140px;
+	}
+	&__title-border{
+		right: auto;
+		left: 112px;
+		top: 210px;
+	}
+	&__title-border{
+		top: 150px;
+	}
+	.slick-slide{
+		padding: 0 60px;
+	}
+	.slick-track{
+		display: flex;
+		align-items: center;
+	}
+}

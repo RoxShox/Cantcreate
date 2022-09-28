@@ -1,0 +1,22 @@
+.icons {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.icon-item {
+  svg {
+    @include media-max(550) {
+      width: 60px !important;
+    }
+  }
+  &:hover {
+    svg {
+      color: #F7941D;
+      transition: all .3s;
+      cursor: pointer;
+    }
+  }
+}

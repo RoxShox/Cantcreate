@@ -1,0 +1,53 @@
+.banner{
+	position: relative;
+	padding-top: 128px;
+	white-space: nowrap;
+
+	@include media-max(600) {
+		padding-bottom: 0;
+		padding-top: 40px;
+		height: 220px;
+	}
+
+
+	.scroll-text.scroll-text-2.banner__text-border {
+		top: 170px;
+		-webkit-text-stroke: 1px var(--orange);
+		-webkit-text-fill-color: #000;
+
+		@include media-max(600) {
+			top: 110px;
+		}
+	}
+	& .scroll-text-hide {
+		width: 100%;
+	}
+
+	& .scroll-text.scroll-text-1 {
+		left: -100%;
+
+		@include media-max(600) {
+			top: 40px !important;
+		}
+	}
+	& .scroll-text.scroll-text-2 {
+		right: -100%;
+	}
+
+	&  .bg-blur {
+		top: -30% !important;
+		width: 30%;
+
+		@include tablet {
+			top: -40px !important;
+		}
+		@include mobile {
+			top: -10px !important;
+		}
+	}
+	& .scroll-text {
+		@include mobile {
+			font-size: 70px;
+		}
+	}
+}

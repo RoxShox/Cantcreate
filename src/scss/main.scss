@@ -1,0 +1,93 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// small blocks
+@import "components/small-blocks/btn";
+@import "components/small-blocks/modal";
+@import "components/small-blocks/dropdown";
+@import "components/small-blocks/burger";
+@import "components/small-blocks/burger-menu";
+@import "components/small-blocks/title";
+@import "components/small-blocks/cookies";
+@import "components/small-blocks/scroll";
+@import "components/small-blocks/sound";
+@import "components/small-blocks/svg";
+@import "components/small-blocks/view-link";
+@import "components/small-blocks/text-block";
+@import "components/small-blocks/double-slider";
+@import "components/small-blocks/icons";
+@import "components/small-blocks/follow_us";
+@import "components/small-blocks/dropdown-panel";
+@import "components/small-blocks/line-scroll";
+@import "components/small-blocks/animation";
+@import "components/small-blocks/scroll-arrow";
+
+
+
+// Big blocks
+
+@import "components/big-blocks/hero";
+@import "components/big-blocks/main-text";
+@import "components/big-blocks/info";
+@import "components/big-blocks/services";
+@import "components/big-blocks/video";
+@import "components/big-blocks/about";
+@import "components/big-blocks/single-img";
+
+@import "components/big-blocks/services";
+@import "components/big-blocks/video";
+
+@import "components/big-blocks/about";
+@import "components/big-blocks/services-links";
+@import "components/big-blocks/single-img";
+@import "components/big-blocks/works";
+@import "components/big-blocks/services";
+@import "components/big-blocks/video";
+@import "components/big-blocks/quadro";
+@import "components/big-blocks/contact-info";
+@import "components/big-blocks/about-hero";
+@import "components/big-blocks/banner";
+@import "components/big-blocks/links-block";
+@import "components/big-blocks/about-banner";
+@import "components/big-blocks/about-descr";
+@import "components/big-blocks/about-photo";
+@import "components/big-blocks/stats";
+@import "components/big-blocks/about-services";
+@import "components/big-blocks/about-canc";
+
+@import "components/big-blocks/quadro";
+@import "components/big-blocks/contact-info";
+@import "components/big-blocks/about-hero";
+@import "components/big-blocks/about-info";
+@import "components/big-blocks/triple";
+@import "components/big-blocks/related";
+@import "components/big-blocks/contact-block";
+@import "components/big-blocks/blog";
+@import "components/big-blocks/load";
+@import "components/big-blocks/open-card";
+@import "components/big-blocks/choice";
+@import "components/big-blocks/picture";
+@import "components/big-blocks/portfolio";
+@import "components/big-blocks/privacy";
+
+@import "components/big-blocks/lost";
+@import "components/big-blocks/preloader";
+@import "components/big-blocks/load";
+
+
+
+
+
+
+@import "components/big-blocks/header";
+
+
+
+@import "components/big-blocks/footer";
+
+
+
+
+@import "block/*.scss";
